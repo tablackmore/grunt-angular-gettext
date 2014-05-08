@@ -47,6 +47,6 @@
     "gettext"
   ],
   "dependencies": {
-    "angular-gettext-tools": "https://github.com/tablackmore/grunt-angular-gettext.git#master"
+    "angular-gettext-tools": "git://github.com/tablackmore/grunt-angular-gettext.git#master"
   }
 }
