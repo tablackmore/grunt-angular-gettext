@@ -1,7 +1,7 @@
 var Compiler = require('angular-gettext-tools').Compiler;
 
 module.exports = function (grunt) {
-    grunt.registerMultiTask('nggettext_compile', 'Compile strings from .po files', function () {
+    function compile() {
         var options = this.options();
 
         if (options.format && !Compiler.hasFormat(options.format)) {
@@ -17,5 +17,7 @@ module.exports = function (grunt) {
 
             grunt.file.write(file.dest, compiler.convertPo(inputs));
         });
-    });
+    }
+    grunt.registerMultiTask('nggettext_compile', 'Compile strings from .po files', compile);
+    grunt.registerMultiTask('nggettextCompile', 'Compile strings from .po files', compile);
 };
