@@ -47,6 +47,6 @@
     "gettext"
   ],
   "dependencies": {
-    "angular-gettext-tools": "~0.0.14"
+    "angular-gettext-tools": "https://github.com/tablackmore/grunt-angular-gettext.git#master"
   }
 }
